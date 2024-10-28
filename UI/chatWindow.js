@@ -3227,6 +3227,7 @@
                     <div class="minimized-title"></div> \
                     <div class="minimized"><span class="messages"></span></div> \
                     <div class="kore-chat-header"> \
+                        <div class="header-icon"><img src="./images/TravelMate_Avatar-removebg-preview.png" alt="" style="height=40px; width=40px"></div> \
                         <div id="botHeaderTitle" aria-labelledby="botHeaderTitle" class="header-title" title="${chatTitle}">${chatTitle}</div> \
                         <div class="chat-box-controls"> \
                             {{if botMessages.availableLanguages}}\
@@ -5820,3 +5821,4 @@
         return returnFun;
     }
 });
+
