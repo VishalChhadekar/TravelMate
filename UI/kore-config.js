@@ -23,7 +23,7 @@
   botOptions.JWTUrl = "https://jwt-service-provider.vercel.app/api/users/sts";
   botOptions.userIdentity = "palak.agrawal@aionos.ai"; // Provide users email id here
   botOptions.botInfo = {
-    name: "TravelMate Final",
+    name: "TravelMate",
     _id: "st-1436f087-5850-5e1a-b1a7-8e559f9a43ee",
   }; // bot name is case sensitive
 
