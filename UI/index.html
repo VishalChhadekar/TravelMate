@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=0.1, maximum-scale=1.0"
+    />
+    <title>Orbital Airlines</title>
+
+    <!-- Your existing script and link files -->
+    <script
+      src="libs/kore-no-conflict-start.js"
+      type="text/javascript"
+    ></script>
+    <script src="libs/jquery.js" type="text/javascript"></script>
+    <script src="libs/jquery.tmpl.min.js" type="text/javascript"></script>
+    <script src="libs/jquery-ui.min.js" type="text/javascript"></script>
+    <link href="libs/jquery-ui.min.css" rel="stylesheet" />
+    <script src="libs/moment.js" type="text/javascript"></script>
+    <script src="../libs/ie11CustomProperties.js"></script>
+    <script src="../libs/lodash.min.js"></script>
+    <script src="../libs/d3.v4.min.js"></script>
+    <script src="../libs/KoreGraphAdapter.js" type="text/javascript"></script>
+    <script src="../libs/anonymousassertion.js"></script>
+    <script src="../kore-bot-sdk-client.js"></script>
+    <script src="../libs/perfect-scrollbar.js" type="text/javascript"></script>
+
+    <!-- Your additional plugin scripts (Amazon Polly, AgentDesktop, etc.) can be uncommented as needed -->
+
+    <!-- Your custom scripts and CSS files -->
+    <script src="chatWindow.js" type="text/javascript"></script>
+    <script
+      src="libs/jquery.daterangepicker.js"
+      type="text/javascript"
+    ></script>
+    <link href="libs/daterangepicker.css" rel="stylesheet" />
+    <script src="libs/jquery-clockpicker.js" type="text/javascript"></script>
+    <link href="libs/jquery-clockpicker.css" rel="stylesheet" />
+    <link href="../libs/kore-pickers.css" rel="stylesheet" />
+    <script src="../libs/kore-pickers.js" type="text/javascript"></script>
+    <script src="../libs/emoji.js" type="text/javascript"></script>
+    <script src="../libs/recorder.js" type="text/javascript"></script>
+    <script src="../libs/recorderWorker.js" type="text/javascript"></script>
+    <script src="libs/dompurify.js" type="text/javascript"></script>
+    <link href="chatWindow.css" rel="stylesheet" />
+    <link href="../libs/emojione.sprites.css" rel="stylesheet" />
+    <link href="../libs/purejscarousel.css" rel="stylesheet" />
+    <script src="../libs/purejscarousel.js" type="text/javascript"></script>
+    <script src="custom/customTemplate.js" type="text/javascript"></script>
+    <link href="../libs/prefect-scrollbar.css" rel="stylesheet" />
+    <link href="custom/customTemplate.css" rel="stylesheet" />
+    <script src="kore-config.js" type="text/javascript"></script>
+    <script src="kore-main.js" type="text/javascript"></script>
+    <script src="libs/kore-no-conflict-end.js" type="text/javascript"></script>
+
+    <!-- Your custom styles for the airline page -->
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+      }
+      .header {
+        background-color: #0a3d62; /* Navy color */
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .logo img {
+        height: 50px;
+        margin-right: 10px;
+      }
+      .logo h1 {
+        color: white;
+        font-size: 24px;
+      }
+      .nav-menu {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+      }
+      .nav-menu li {
+        margin-right: 20px;
+      }
+      .nav-menu a {
+        color: white;
+        text-decoration: none;
+        font-size: 16px;
+      }
+      .nav-menu a:hover {
+        text-decoration: underline;
+      }
+      .cta {
+        background-color: #1abc9c;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 5px;
+        text-decoration: none;
+      }
+      .cta:hover {
+        background-color: #16a085;
+      }
+      .hero {
+        position: relative;
+        background-image: url(images/airplane-7429725_1280.jpg); /* Place your wing image in the images folder */
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+        color: white;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .hero h1 {
+        font-size: 48px;
+        margin-bottom: 10px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      }
+      .hero p {
+        font-size: 20px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      }
+      .hero .btn {
+        background-color: #f39c12;
+        color: white;
+        padding: 15px 30px;
+        border-radius: 5px;
+        text-decoration: none;
+        font-size: 18px;
+      }
+      .hero .btn:hover {
+        background-color: #e67e22;
+      }
+
+      .hero-content {
+        position: relative;
+        bottom: 65px;
+        height: 13rem;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">
+        <img
+          src="images/360_F_154052402_pyjqPL1qiJ0yE9VW76X6zxBFxGCPz0Me.jpg"
+          alt="Orbital Airlines Logo"
+        />
+        <!-- Place your logo here -->
+      </div>
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Destinations</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+      <a href="#" class="cta">TravelMate</a>
+    </header>
+
+    <div class="hero">
+      <div class="hero-content">
+        <h1>Fly Beyond Limits</h1>
+        <p>Book your next adventure with Orbital Airlines.</p>
+        <a href="#" class="btn">Book Now</a>
+      </div>
+    </div>
+
+    <!-- Chat Window Section -->
+    <div id="kr_chatContainer">
+      <button class="openChatWindow">Open Chat Window</button>
+    </div>
+  </body>
+</html>
