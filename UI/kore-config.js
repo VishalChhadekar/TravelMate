@@ -21,10 +21,10 @@
   };
 
   botOptions.JWTUrl = "https://jwt-service-provider.vercel.app/api/users/sts";
-  botOptions.userIdentity = "bijeyta.t@aionos.ai"; // Provide users email id here
+  botOptions.userIdentity = "palak.agrawal@aionos.ai"; // Provide users email id here
   botOptions.botInfo = {
-    name: "TravelMate",
-    _id: "st-a40177b9-4d18-5506-af61-9af8a3e48028",
+    name: "TravelMate Final",
+    _id: "st-1436f087-5850-5e1a-b1a7-8e559f9a43ee",
   }; // bot name is case sensitive
 
   /* 
@@ -32,8 +32,8 @@
     Refer below document for JWT token generation at server side. Client Id and Client secret should maintained at server end.
     https://developer.kore.ai/docs/bots/sdks/user-authorization-and-assertion/
     **/
-  botOptions.clientId = "cs-c23b729c-20ff-51da-a8d4-43e4556b2fe4";
-  botOptions.clientSecret = "7yofPQ5P58rI1gTyUwdTtSLOVPPXDoT0aay7mUsyIB4=";
+  botOptions.clientId = "cs-e46a9e4c-2b9b-5245-85ce-9036e669b859";
+  botOptions.clientSecret = "6NbXh0NpTlaeYa6l+eYfCkfeA7HH5OF4XBe+nGJAXwM=";
   botOptions.brandingAPIUrl =
     botOptions.koreAPIUrl +
     "websdkthemes/" +
