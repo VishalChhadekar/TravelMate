@@ -1919,7 +1919,8 @@
 .kore-chat-window .quick_replies_btn_parent .autoWidth {
   /* display: table-row; */
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
+  flex-wrap: wrap;
 }
 
 .kore-chat-window .buttonTmplContent .buttonTmplContentChild.quickReplyDiv {
@@ -1933,9 +1934,9 @@
 .kore-chat-window .buttonTmplContent .buttonTmplContentChild .quickReply {
   border: 1px solid var(--sdk-chat-window-btn-border-clr);
 
-  padding: 4px 13px;
+  padding: 10px 13px;
 
-  border-radius: 20px;
+  border-radius: 8px;
 
   display: table;
 
@@ -1972,13 +1973,13 @@
   margin: 0px 7px -2px -8px;
 }
 
-.kore-chat-window .buttonTmplContent .buttonTmplContentChild .quickReply:hover {
+/* .kore-chat-window .buttonTmplContent .buttonTmplContentChild .quickReply:hover {
   background: var(--sdk-chat-window-btn-hover-bg);
 
   color: var(--sdk-chat-window-btn-hover-font-clr);
 
   border: 1px solid var(--sdk-chat-window-btn-hover-border-clr);
-}
+} */
 
 .kore-chat-window .buttonTmplContent .buttonTmplContentChild img {
   max-width: 100%;
