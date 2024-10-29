@@ -1917,7 +1917,9 @@
 }
 
 .kore-chat-window .quick_replies_btn_parent .autoWidth {
-  display: table-row;
+  /* display: table-row; */
+  display: flex;
+  flex-direction: column;
 }
 
 .kore-chat-window .buttonTmplContent .buttonTmplContentChild.quickReplyDiv {
